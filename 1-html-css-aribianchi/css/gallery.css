@@ -1,0 +1,43 @@
+/*
+ * HTML5 and CSS1
+ *
+ * CSS Styles
+ *
+ * Include this stylesheet from all pages of your website
+ *
+ * Author: __Arianna Bianchi __
+ *
+ */
+
+
+
+/*--3. MAIN CONTENT------------------------------------------------------*/
+
+.mainContent > img {
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 80px;
+    min-width: 80px;
+    color: white;
+}
+
+.nav-main-side > .mainContent {
+    /*display: flex;*/
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 3%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.mainContent > img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 2s;
+}
+
+
+
+
+/*--END MAIN CONTENT--------------------------------------------------*/
+

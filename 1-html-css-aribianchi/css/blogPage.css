@@ -1,0 +1,100 @@
+/*
+ * HTML5 and CSS1
+ *
+ * CSS Styles
+ *
+ * Include this stylesheet from all pages of your website
+ *
+ * Author: __Arianna Bianchi __
+ *
+ */
+
+
+
+/*--3. MAIN CONTENT------------------------------------------------------*/
+
+#namePost {
+    text-align: left;
+    background-color: silver;
+    padding-left: 2px;
+    color: black;
+
+}
+h4 {
+    text-align: left;
+    background-color: silver;
+    color: black;
+
+}
+
+.sectionnamePost { 
+    margin: 0;
+    /*fit the section to text and put the h4 under the h2 and box fits to text*/
+    display: table;
+    /*put the header under left */
+    clear: both;
+}
+
+.nav-main-side {
+    display: flex;
+    /* This bring the sticky foot*/
+    flex: 1;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+}
+
+.mainContent {
+    color: white;
+    border: 1px solid white;
+    border-bottom: 0;
+    padding: 0;
+}
+
+#firstPost {
+    float: left;
+    margin-right: 3%;
+    max-width: 240px;
+    max-height: 240px;
+}
+
+.mainParagraf {
+    text-align: justify;
+    margin-bottom: 0;
+
+}
+.mainParagraf2 {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 6%;
+}
+
+.sectionTextPost > a {
+    float: left;
+    margin-right: 3%;
+    max-width: 240px;
+    max-height: 240px;
+    display: contents;
+}
+
+/*--END MAIN CONTENT--------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    .sectionnamePost > img {
+        width:100% !important;
+    }
+
+    #firstPost {
+        width: 96%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 5%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .mainParagraf {
+        margin:0;
+        margin-bottom: 6%;
+    }
+
+}

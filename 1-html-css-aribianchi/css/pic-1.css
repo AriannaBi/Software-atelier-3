@@ -1,0 +1,25 @@
+/*
+ * HTML5 and CSS1
+ *
+ * CSS Styles
+ *
+ * Include this stylesheet from all pages of your website
+ *
+ * Author: __Arianna Bianchi __
+ *
+ */
+
+
+body {
+    background-color: black;
+    
+}
+
+.mainContent > img {
+    max-width: 60%;
+    max-height: 60%;
+    min-height: 60%;
+    min-width: 60%;
+    color: white;
+}
+

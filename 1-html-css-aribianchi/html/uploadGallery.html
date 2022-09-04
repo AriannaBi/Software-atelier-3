@@ -1,0 +1,117 @@
+<!--
+ * HTML5 and CSS1
+ *
+ * CSS Styles
+ *
+ * Include this stylesheet from all pages of your website
+ *
+ * Author: __Arianna Bianchi __
+ *
+-->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Upload gallery</title>
+        <meta name="author" content="Arianna Bianchi">
+        <link href="../css/style.css" rel="stylesheet"/>
+        <link href="../css/uploadGallery.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <!--1. HEADER------------------------------------------------------------>
+        <header class="header">
+            <h1 class="title">LANDSCAPE PICTURES</h1>
+            
+            <h2 class="subtitle">Upload your picture</h2>
+
+            <!-- Logo-->
+            
+
+        </header>
+        <!--END HEADER-------------------------------------------------------->
+        
+
+
+        <div class="nav-main-side">
+            
+        <!--2. NAVIGATION-------------------------------------------------------->
+            <nav class="navigation">
+                <div class="nav"><a href="../index.html">Home Page</a></div><hr>
+                <div class="nav"><a href="blogPage.html">Blog Page</a></div><hr>
+                <div class="nav"><a href="gallery.html">Gallery photos</a></div><hr>
+                <div class="nav"><a href="uploadGallery.html" class="current">Upload gallery</a></div><hr>
+            </nav>
+        <!--END NAVIGATION---------------------------------------------------->
+
+
+
+
+
+
+        <!--3. MAIN CONTENT------------------------------------------------------>
+            <main class="mainContent">
+                <div id="leftColumn" >
+                    <label>Picture title</label>
+                    <label>Email</label>
+                    <label>Optional picture description</label>
+                    <label>Upload the image file</label>
+                    <label>Mark if it's your preferit</label>
+                    <label>Rate the quality of the image</label>
+                    
+                </div>
+                <div id="rightColumn">
+                    <input type="text" placeholder="Picture title">
+                    <input type="email" placeholder="ex. name.surname@gmail.com">
+                    <textarea placeholder="An optional picture description"></textarea>
+                    <input type="file" accept="image/*" capture="user" placeholder="Write something">
+                    <input type="checkbox" placeholder="Write something">
+                    <input type="range" min="0" max="10" value="0">
+                    <button type="submit">Upload</button>
+                </div>
+               
+            </main>
+        <!--END MAIN CONTENT-------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+        <!--4. SIDE BAR---------------------------------------------------------->
+        <aside class="sidebar">
+            <div class="circleSide">
+                <section class="linkSidebar">
+                    <a href="https://www.instagram.com/" target="_blank" class="linkSide">Instagram</a>
+                    <img src="../image/insta%20pic.png" class="sidebarImages">
+                </section>
+            </div>
+            <div class="circleSide">
+                <section class="linkSidebar">
+                    <a href="https://web.whatsapp.com/" target="_blank" class="linkSide">Whatsapp</a>
+                    <img src="../image/whapp.jpg" class="sidebarImages">
+                </section>
+            </div>
+            <div class="circleSide">
+                <section class="linkSidebar">
+                    <a href="https://www.facebook.com/" target="_blank" class="linkSide">Facebook</a>
+                    <img src="../image/face.png" class="sidebarImages">
+                </section>
+            </div>
+        </aside>
+    </div>
+        </div>
+        <!--END SIDE BAR------------------------------------------------------>
+
+        
+        <!--5. FOOTER------------------------------------------------------------>
+        <footer class="footer"> 
+            <p>Copyright &#169 2020 Arianna Bianchi </p>
+        </footer>
+        <!--END FOOTER-------------------------------------------------------->
+    </body>
+</html>

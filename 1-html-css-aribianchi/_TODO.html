@@ -1,0 +1,170 @@
+<html><head><title>exercises/1-html-css</title><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans|Fira+Mono"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/styles/default.min.css"><style>body,* {font-family: "Fira Sans";scroll-behavior: smooth;}body {margin: 1em;}#usi-logo {width: 75px;height: 75px;}header {display: flex;align-content: space-between;width: 100%;justify-items: center;}header ul {list-style: none;}header .title {flex: 1;margin-left: 1em;}html {min-height: 100vh;}pre,code {font-family: "Fira Mono"}pre {background: rgb(202, 227, 255);padding: 1em;}td {text-align: center}td:last-child {text-align: left;}th {font-weight: normal;color: rgb(0, 61, 131);}thead {border-bottom: 2px solid rgb(202, 227, 255);}table {width: 100%}span.task {display: inline-flex;border-radius: 50%;border: 1px solid white;background: #ffbc00;width: 4em;height: 4em;justify-content: center;align-items: center;font-weight: normal;margin-top: 2em;}.deadline {text-align: right;}p.deadline {font-size: 2em;}.deadline b {border-bottom: 1px solid black;}</style></head><body><header>    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="usi-logo" x="0px" y="0px" width="200" height="200" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve" class="injected-svg svg"><g><path d="M180,41.7h-51.1V31.1h42.2C153.1,12.5,127.8,1,99.9,1C45.2,1.1,0.9,45.4,1,100.1c0,26.8,10.7,51.1,28.1,68.9   c-1.4-2-2.4-4.1-3-6.1c-1-3.5-1-5.9-1.1-15.8v-47.1h14.8v48.5c0,3.4-0.1,6.6,1,9.6c3,7.6,11.3,8.5,16,8.5c2.3,0,8.3-0.1,12.6-3.9   c4.4-3.9,4.4-8.4,4.4-15v-47.7h14.9v49.7c-0.1,8.9-0.1,16.3-8.5,23.5c-8,7-18.4,7.7-23.8,7.7c-4.8,0-9.5-0.6-14-2.1   c-1.8-0.6-3.5-1.4-5-2.3c17.1,14,39,22.4,62.8,22.4c54.7-0.1,99-44.4,98.9-99.1C199,78.1,191.9,58,180,41.7z M175.3,94.4l-6.3-9   c2.1-1.4,8.7-5.7,8.7-17.7c0-2-0.2-4.1-1-6.2c-1.7-4.1-4.6-4.9-6.6-4.9c-3.6,0-4.9,2.5-5.7,4.3c-0.5,1.3-0.6,1.5-1.8,6.6l-1.5,6.9   c-0.9,3.6-1.3,5.4-2,7.2c-1.1,2.6-4.5,9.6-14,9.6c-10.9,0-17.8-9.2-17.8-22.6c0-12.3,6.1-19,11.6-23l6.6,8.8   c-2.8,1.9-8.5,5.7-8.5,14.8c0,5.8,2.6,10.8,7,10.8c4.9,0,5.8-5.3,6.8-10.5l1.3-5.9c1.6-7.7,4.8-18.6,17-18.6   c13.1,0,18.4,12.2,18.4,24.3c0,3.2-0.3,6.7-1.3,10.2C185.1,83.4,182.3,90.1,175.3,94.4z"></path></g></svg><div class="title"><h2>Web Atelier 2020</h2><h1>Exercise  1 - HTML5 and CSS</h2></div><div class="deadline"><p>18.9.2020</p><p class="deadline">Deadline: <b>25.9.2020</b></p></div><ul><li>Prof. Cesare Pautasso</li><li>Dr. Andrea Gallidabino</li><li>Fabio Di Lauro</li><li>Souhaila Serbout</li><li>Michael Weiss</li><li>Tahereh Zohdinasab</li></ul></header><aside><h1>GitHub Classroom: <a href="https://classroom.github.com/a/4iW7hUXO">Invite Link</a></h1></aside><section><h1 id="goal">Goal</h1>
+<p>The goal of this exercise is to create your <strong>personal website</strong> using HTML5 for the structure and content and CSS for styling.</p>
+<p>Your website should have at least the following pages:</p>
+<ol>
+<li>a <strong>home</strong> page</li>
+<li>a <strong>blog</strong> page</li>
+<li>a <strong>picture gallery</strong> page</li>
+<li>a <strong>picture upload</strong> form page.</li>
+</ol>
+<p>To get started, you can use the skeleton files we provide in the gitlab classroom project.</p>
+<section><h2 id="publishing-your-website">Publishing your website</h2>
+<p>Your project solution <strong>should</strong> be commited <strong>and pushed</strong> to your github class repository. Make sure your name is written in every file you submit. Anonymous solutions will not be graded.</p>
+<p>Once complete, your website <strong>should</strong> be uploaded to the <code>atelier.inf.usi.ch</code> server (if you have problems with the <code>ssh</code> authentication using your USI account you can contact <a href="mailto:&#115;&#105;&#x73;&#116;&#101;&#109;&#x61;&#46;&#108;&#117;&#x40;&#117;&#115;&#105;&#x2e;&#x63;&#104;">&#115;&#105;&#x73;&#116;&#101;&#109;&#x61;&#46;&#108;&#117;&#x40;&#117;&#115;&#105;&#x2e;&#x63;&#104;</a>).</p>
+<p>To do so, upload your finished website on <code>atelier.inf.usi.ch</code> under your <code>/home/&lt;your_username&gt;/public_html/wa1</code> directory. If, for example, your username is <code>johndoe</code>, then you should put your files in <code>/home/johndoe/public_html/wa1</code>. We should then be able to access your website using the following URL: <a href="http://atelier.inf.usi.ch/~johndoe/wa1">http://atelier.inf.usi.ch/~johndoe/wa1</a>.</p>
+<p>Hint: to upload your homepage on the server you can clone your git class repository there, or use <code>rsync</code> from your computer.</p>
+<section><h2 id="task---holy-grail-layout"><span class='task'>Task 1.</span>  Holy grail layout</h2>
+<p>Time to get started with the basic structure of your website which will be none other than the classic <a href="https://en.wikipedia.org/wiki/Holy_Grail_(web_design)">holy grail layout</a> with a <a href="https://en.wikipedia.org/wiki/Responsive_web_design">responsive</a> twist.</p>
+<section><h3 id="content-structure">Content Structure</h3>
+<p>The holy grail layout consists of a header, a navigation section, a sidebar, the main content and a footer section. Your markup should be <strong>semantically</strong> correct (for example using the <code>&lt;header&gt;</code> tag for the <code>HEADER</code> section).</p>
+<section><h4 id="1-header">1. Header</h4>
+<p>The header should display the name of your webpage. Feel free to put a logo if you have one.</p>
+<section><h4 id="2-navigation">2. Navigation</h4>
+<p>Links to all the pages of your site. Hovering on a link should <strong>transition</strong> the default background the link to a color of your liking <strong>within 250 milliseconds</strong>.</p>
+<section><h4 id="3-main-content">3. Main Content</h4>
+<p>This depends on the page (see below).</p>
+<section><h4 id="4-sidebar">4. Sidebar</h4>
+<p>The sidebar should contain links to your social media profiles.</p>
+<section><h4 id="5-footer">5. Footer</h4>
+<p>Additional information like copyright, the date when the page was last updated and links to legal disclaimers.</p>
+<section><h3 id="styling-and-layout">Styling and Layout</h3>
+<p>Your site should use a consistent style shared by all the pages. If you need to customize the layout/formatting of individual pages you can also add CSS rules dedicated to each page.</p>
+<p>Use <strong>flexbox</strong> to implement this layout for <strong>all</strong> your pages.    Pay attention to the design mockups provided.</p>
+<section><h4 id="mobile">Mobile</h4>
+<p>For <strong>mobile-size</strong> viewports (less than than <strong>768 pixels</strong>), your design should look like shown below:</p>
+<img src="https://i.imgur.com/WlI3EI4.png" alt="holy grail mobile png" style="height: 380px">
+
+<p>The mobile version should satisfy the following requirements:</p>
+<ul>
+<li>All sections should fill <strong>horizontally</strong> the visible viewport.</li>
+<li>The <code>NAVIGATION</code> and the <code>SIDEBAR</code> are positioned above and below the <code>MAIN CONTENT</code> respectively.</li>
+</ul>
+<section><h4 id="desktop">Desktop</h4>
+<p>For <strong>desktop-size</strong> viewports (equal or more than <strong>768 pixels</strong>), your design should look like shown below:</p>
+<img src="https://i.imgur.com/63CCMl6.png" alt="holy grail desktop png" style="height: 350px">
+
+
+<p>The desktop version should satisfy the following requirements:</p>
+<ul>
+<li>The content of the page should <strong>horizontally</strong> fill the visible viewport.</li>
+<li>The <strong>height</strong> of the <code>NAVIGATION</code> and <code>SIDEBAR</code> is expected to stretch all the way to the <code>FOOTER</code> even when there&#39;s no content inside them.</li>
+<li>The <code>FOOTER</code> is supposed be <strong>&quot;sticky&quot;</strong> to the bottom of the page. This means that even if there&#39;s not enough content in the <code>MAIN CONTENT</code> section of your page to push the footer the bottom of the window, the <code>FOOTER</code> should still stick to the bottom. However, if the main content does not fit in the browser viewport, the <code>FOOTER</code> should be pushed out of view (the user will need to scroll to find at the bottom of the page).</li>
+</ul>
+<p>Both the desktop and mobile layouts should be implemented using <strong>CSS</strong> only. Use the same <strong>HTML</strong> markup for both layouts.</p>
+<div class="header-margin" style="page-break-before: always;"></div>
+
+</section><section><h2 id="task---home-page"><span class='task'>Task 2.</span>  Home page</h2>
+</section><section><h3 id="main-content">Main Content</h3>
+<ul>
+<li>A couple of paragraphs about your personal website. Feel free to list your hobbies and anything you want to share with the world.</li>
+<li>Some multimedia, pick at least one among:<ul>
+<li>A video you like from <a href="https://www.youtube.com">youtube.com</a> embedded using an <code>&lt;iframe&gt;</code> element.</li>
+<li>Your favourite <code>mp3</code> so that people visiting your website can listen to it, embedded with an <code>&lt;audio&gt;</code> element</li>
+</ul>
+</li>
+</ul>
+</section><section><h3 id="styling-and-layout-1">Styling and Layout</h3>
+<p>The homepage text, images, audio and iframes <strong>should not overflow horizontally</strong>.</p>
+</section><section><h2 id="task---blog-page"><span class='task'>Task 3.</span>  Blog page</h2>
+<p>Your blog page should contain at minimum <strong>3</strong> posts, at least one of which should list <strong>you</strong> as the author.</p>
+</section><section><h3 id="main-content-1">Main Content</h3>
+<p>Each post should:</p>
+<ul>
+<li>have a heading with the <strong>title</strong> of the post</li>
+<li>have the <strong>author name</strong> and the <strong>date</strong> the article was posted right under the heading. The style for the author name and date should be different than the heading (usually a small font in an unobtrusive color). If the author of the post is you, your name should link to the homepage of your website and have a different style than the rest of the authors (you can use your default style for links if you want).</li>
+<li>At least one <strong>image</strong> pertinent to the post. The markup of the image should be <strong>before</strong> the text of the post. All images for blog posts should be stored under the <code>&lt;your project root&gt;/images.</code> directory.</li>
+<li>Clicking the images of the post should open a new window (tab) that displays the clicked image in full size.</li>
+<li>The <strong>text</strong> of the post describing the image. There should be at least <strong>2 paragraphs</strong> with more than <strong>200</strong> words in total. The text should wrap around the image. If you do not know what to write, try this <a href="https://www.loremipsum.de/index_en.html">Lorem Ipsum Generator</a></li>
+</ul>
+</section><section><h3 id="styling-and-layout-2">Styling and Layout</h3>
+</section><section><h4 id="mobile-1">Mobile</h4>
+<p>Each post image should occupy the full width of the page.  They should maintain the <em>same aspect ratio</em> as the source image file.</p>
+<p>Here&#39;s an example of how a post should look like in <strong>mobile-size</strong> viewports (feel free to modify the design to your liking, as long as it abides to the requirements):</p>
+<img src="https://i.imgur.com/H3X1z2Q.png" alt="blog post mockup" style="height: 350px">
+
+<div class="header-margin" style="page-break-before: always;"></div>
+
+</section><section><h4 id="desktop-1">Desktop</h4>
+<p>The images should float left of the text. The images should be no bigger than <strong>240 pixels</strong> in both dimensions. It should maintain the <em>same aspect ratio</em> as the source image file.</p>
+<p>Here&#39;s an example of how a post should look like in <strong>desktop-size</strong> viewports (feel free to modify the design to your liking, as long as it conforms to the requirements):</p>
+<img src="https://i.imgur.com/MCSN2dr.png" alt="blog post mockup" style="height: 350px">
+
+
+</section><section><h2 id="task---picture-gallery-page"><span class='task'>Task 4.</span>  Picture Gallery page</h2>
+<p>This page should list your favourite images.</p>
+<p>Some requirements about the images:</p>
+<ul>
+<li>There should be at least 8 different images. You can reuse some of the images of the blog.</li>
+<li>Store all your images under the <code>&lt;your project root&gt;/images.</code> directory. All of them should be wider than <code>1024 pixels</code> and taller than <code>768 pixels</code>. At least three of them need to have unique <strong>aspect ratios</strong> compared to the rest of the images.</li>
+</ul>
+<p>The gallery page should:</p>
+<ul>
+<li>display all your images as thumbnails in a grid view.</li>
+<li>Each thumbnail should be no larger than <code>200 pixels</code> and no shorter than <code>80 pixels</code> in both dimensions.</li>
+<li>Each thumbnail should display the image in the original aspect ratio.</li>
+<li>There should be whitespace between thumbnails.</li>
+<li>If there&#39;s not enough horizontal space to fill all the thumbnails they should wrap to the next line instead of horizontally overflowing the <code>MAIN CONTENT</code> section.</li>
+</ul>
+<p>Here&#39;s an example of how the <code>Main Content</code> section of the gallery page should look like (feel free to modify the design to your liking, as long as it abides to the requirements):</p>
+<img src="https://i.imgur.com/vo6CKXR.png" alt="gallery page mockup" style="height: 340px">
+
+
+</section><section><h2 id="task---picture-upload-form"><span class='task'>Task 5.</span>  Picture Upload Form</h2>
+</section><section><h3 id="main-content-2">Main Content</h3>
+<p>The page should contain a form with the following input fields:</p>
+<ul>
+<li>a field for the picture title </li>
+<li>an email field for the picture author</li>
+<li>a multi-line field for the optional picture description</li>
+<li>a field to the upload of the image <strong>file</strong></li>
+<li>a field to denote whether the image should be marked as favourite or not</li>
+<li>a slider to rate the quality of the image (from 0 to 10)</li>
+<li>the submit button</li>
+</ul>
+<p>Every field should have a label that denotes what this field expects as a value. Opt for a <strong>two-column</strong> layout where on the left you have the labels and on the right the fields. The submit button doesn&#39;t need a label since it can display the &quot;Submit&quot; text within its markup.</p>
+<p>Pay extra attention to using the correct fields, buttons and attributes for the form. For example, if the user tries to submit the form with an email that has invalid format, the form should show an error message. Using the correct configuration, allows you to do this with plain markup.</p>
+<p>Here&#39;s an example of how the form in the <code>Main Content</code> section of the picture upload form page should look like (feel free to modify the design to your liking, as long as it conforms to the requirements):</p>
+<img src="https://i.imgur.com/bcpnWTc.png" alt="bio page mockup" style="height: 400px">
+
+
+</section><section><h2 id="task---optional-features"><span class='task'>Task 6.</span>  Optional Features</h2>
+<ol>
+<li><p>Navigation</p>
+<p> Highlight the navigation entry corresponding to the currently active page.</p>
+</li>
+<li><p>Custom Fonts</p>
+<p> Your site may optionally also load and use at least <strong>one custom font</strong>. Feel free to either use Web fonts, or to specify one using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/%40font-face"><code>@font-face</code></a> CSS rule.</p>
+</li>
+<li><p>Interactive Picture Gallery</p>
+<ul>
+<li>Smoothly change the style of the thumbnail image on which the mouse hovers. For example, make the image larger, add a shadow or a colored frame, use a <a href="https://css-tricks.com/almanac/properties/f/filter/">CSS Filter</a>.</li>
+<li>Clicking a thumbnail should open a new browser window (or tab) that displays the image in full size.</li>
+<li>Hovering on a thumbnail should display the <code>pointer</code> cursor.</li>
+</ul>
+</li>
+<li><p>Mobile Phone Camera</p>
+<p> In the picture upload form, connect the image file field to the phone camera with <a href="https://www.html5rocks.com/en/tutorials/getusermedia/intro/">HTML Media Capture</a></p>
+</li>
+</ol>
+<p><span style="font-style: italic; ">You should update the <code>README.md</code> file enumerating the optional features you implemented.</span></p>
+</section><section><h2 id="mastery-check-topics">Mastery Check Topics</h2>
+<p>Solving this exercise will demonstrate mastery for the following topics:</p>
+<ul>
+<li><p>1.HTML  </p>
+<ul>
+<li>1.1. Syntax (Elements, Attributes)  </li>
+<li>1.2. Core Elements  </li>
+<li>1.3. Multimedia Elements  </li>
+<li>1.4. Interactive Elements  </li>
+</ul>
+</li>
+<li><p>2. CSS  </p>
+<ul>
+<li>2.1. Selectors  </li>
+<li>2.2. Core Properties  </li>
+<li>2.3. Layout  </li>
+<li>2.4. Transitions  </li>
+</ul>
+</li>
+</ul>
+</section><footer></footer></body></html>
