@@ -1,0 +1,23 @@
+img {
+    width: 100vw;
+    height: 95vh;
+}
+
+#buttons {
+    position: absolute;
+    padding: 3%;
+    width: 38%;
+    opacity: 0;
+}
+
+button {
+    height: 40px;
+    width: 70px;
+    
+}
+
+#buttons:hover, button:hover{
+    display: inline-block;
+    opacity: 1;
+    transition: 1s;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Atelier 2020 2 - JavaScript - Mocha Tests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" /> -->
+    <link rel="stylesheet" href="css/mocha.css" />
+  </head>
+  <body>
+    <h1>JavaScript2 - Automated Tests for Tasks 1 and 2</h1>
+    <div id="mocha"></div>
+
+    <!-- Script with the solution to be tested -->
+    <script src="js/script.js"></script>
+
+    <script src="js/test/lodash.js"></script>
+
+    <!-- <script src="https://unpkg.com/should/should.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script> -->
+    <script src="js/test/mocha.js"></script>
+    <script src="js/test/should.js"></script>
+    <script src="js/test/jsverify.standalone.js"></script>
+    <script src="js/test/jsverify-util.js"></script>
+
+    <script class="mocha-init">
+      mocha.setup('bdd');
+      mocha.checkLeaks();
+    </script>
+
+    <!-- Script with the test cases -->
+    <script src="js/test.js"></script>
+    <script class="mocha-exec">
+      mocha.run();
+    </script>
+  </body>
+</html>

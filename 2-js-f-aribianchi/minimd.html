@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Web Atelier 2020  - Exercise 2 - JavaScript - Mini Markdown Parser</title>
+    <style>
+        textarea {width: 100%; height: 10em;}
+    </style>
+</head>
+
+<body onload="init()">
+    <h1>Exercise 2 - JavaScript - Task 4 - Mini Markdown Parser</h1>
+    <textarea id="input" placeholder="Write your mini markdown here"></textarea>
+    <div id="output"></div>
+
+    <!-- Script where the init_slideshow function is implemented -->
+    <script src="js/script.js"></script>
+
+    <script>
+        //Task 3
+        function init() {
+            let output = document.getElementById("output");
+            let input = document.getElementById("input");
+            input.addEventListener("input", function(e) {
+                output.innerHTML = mini_md(input.value);
+    });
+    }
+    </script>
+</body>
+
+</html>

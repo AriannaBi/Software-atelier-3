@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Atelier 2020  - Exercise 2 - JavaScript - Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+  </head>
+  <body onload="init()">
+    <h1>Exercise 2 - JavaScript - Task 2 - Slideshow</h1>
+
+  <div id="buttons">
+    <button id="next">Next</button>
+    <button id="previous">Previous</button>
+    <button id="pause">Pause</button>
+    <button id="resume">Resume</button>
+    <button id="reverse">Reverse</button>
+  </div>
+
+    <img id="slideshow"></img>
+
+    <input type="range" min="1" max="10" value="0" id="myRange">
+
+    <!-- Script where the init_slideshow function is implemented -->
+    <script src="js/script.js"></script>
+
+    <script>
+        //Task 3
+        function init() {
+            let images = ['images/campus1.jpg','images/campus2.jpg','images/campus3.jpg'];
+            let startFunction = init_slideshow(images, document.getElementById("slideshow"), true, document.getElementById("range") + 3000);
+            document.getElementById("next").onclick = function () { startFunction() };
+            document.getElementById("previous").onclick = function () { startFunction("prv") };
+            document.getElementById("pause").onclick = function () { startFunction("pse") };
+            document.getElementById("resume").onclick = function () { startFunction("rsm") };
+            document.getElementById("reverse").onclick = function () { startFunction("reverse") };
+        }
+    </script>
+  </body>
+</html>
